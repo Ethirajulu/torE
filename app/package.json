@@ -1,0 +1,29 @@
+{
+  "name": "tore",
+  "productName": "torE",
+  "version": "1.4.0",
+  "description": "Simple torrent client",
+  "main": "./main.prod.js",
+  "author": {
+    "name": "Ethirajulu Sukumar",
+    "email": "ethirajulusukumar@gmail.com",
+    "url": "https://ethirajulu-profile.vercel.app"
+  },
+  "scripts": {
+    "electron-rebuild": "node -r ../internals/scripts/BabelRegister.js ../internals/scripts/ElectronRebuild.js",
+    "postinstall": "yarn electron-rebuild"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "capture-frame": "^4.0.0",
+    "create-torrent": "^4.4.2",
+    "crypto": "^1.0.1",
+    "reselect": "^4.0.0",
+    "uuid4": "^2.0.2",
+    "webtorrent": "^0.111.0",
+    "wrtc": "^0.4.6"
+  },
+  "devDependencies": {
+    "@types/webtorrent": "^0.109.0"
+  }
+}
